@@ -11,3 +11,10 @@
     background: red;
     transform-origin: 0%;
 }
+
+/* .name-canvas canvas {
+    width: 100% !important;
+    height: 100vh !important;
+    object-fit: contain;
+    background: transparent;
+} */
