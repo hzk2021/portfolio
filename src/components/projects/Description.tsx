@@ -4,10 +4,10 @@ export default function Description(props : ProjectDescription) {
     return (
       <>
             <h1 className="project-name text-5xl font-bold">{props.projName}</h1>
-            <div className="programming-languages w-8">
+            <div className="programming-languages flex gap-x-3">
                 {
                     props.langIcons.map(icon => {
-                        return icon
+                        return <div className="w-6"> {icon} </div>
                     })
                 }
             </div>
