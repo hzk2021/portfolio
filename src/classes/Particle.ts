@@ -36,7 +36,7 @@ export default class Particle {
     }
   
     draw() {
-      // this.effect.context.fillStyle = this.colour;
+      this.effect.context.fillStyle = this.colour;
       this.effect.context.fillRect(this.x, this.y, this.size, this.size);
     }
   

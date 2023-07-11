@@ -45,7 +45,7 @@ export class Effect {
     }
   
     createText(textArr: string[]) {
-      this.context.fillStyle = 'black || #fde9ff';
+      this.context.fillStyle = 'white';
       this.context.strokeStyle = 'black';
       this.context.lineWidth = 2;
       this.context.textAlign = 'center';

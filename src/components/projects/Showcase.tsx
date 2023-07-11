@@ -15,9 +15,16 @@ export default function Showcase(props: ProjectShowcase) {
                         before:rounded-br-md
                         rounded-sm 
                         border-black 
-                        w-[15%] 
-                        h-44">
-                          <img src={props.projImagePhone}></img>
+                        xl:w-[15%] 
+                        max-w-[100px]
+                        xl:h-44
+                        overflow-hidden
+                        lg:w-[16%]
+                        max-h-32
+                        min-h-[150px]
+                        xs:w-[5%]
+                        xs:h-10">
+                          <img src={props.projImagePhone} alt="phone-screen-img" className="object-fill w-full h-full"/>
                         </div>
 
         <div className="pc-screen  
@@ -30,8 +37,13 @@ export default function Showcase(props: ProjectShowcase) {
                         border-8
                         rounded-md 
                         border-black 
-                        w-7/12 
-                        h-72"></div>
+                        w-3/4
+                        max-h-[200px]
+                        
+                        overflow-hidden">
+                          <img src={props.projImagePC} alt="pc-screen-img" className="object-fill w-full h-full"/>
+                        </div>
+
       </>
       
     );
