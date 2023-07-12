@@ -1,6 +1,4 @@
 import googleImg from "../../assets/images/google.png";
-import battleshipImg from "../../assets/images/battleship-desktop.webp";
-import battleshipMobileImg from "../../assets/images/battleship-mobile.webp";
 import cvImg from "../../assets/images/cv-app-desktop.webp";
 import cvMobileImg from "../../assets/images/cv-app-mobile.webp";
 
@@ -57,20 +55,20 @@ class ProjectInstance {
 }
 
 const projectOne = new ProjectInstance({
-  projName: "ship",
-  langIcons: [jsIcon, reactIcon],
-  projDescription: "Lorem ipsum",
-  demoLink: "www.google.com",
-  sourceLink: "www.google.com",
-  projImagePhone: battleshipMobileImg,
-  projImagePC: battleshipImg,
+  projName: "Project 1",
+  langIcons: [jsIcon, reactIcon, webpackIcon],
+  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula.",
+  demoLink: "https://www.google.com",
+  sourceLink: "https://www.google.com",
+  projImagePhone: cvMobileImg,
+  projImagePC: cvImg,
   className: "grid h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
 });
 
 const projectTwo = new ProjectInstance({
-  projName: "ProjectTwo",
+  projName: "Project 2",
   langIcons: [webpackIcon, reactIcon],
-  projDescription: "lorem ipsum",
+  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula. ",
   demoLink: "www.google.com",
   sourceLink: "www.google.com",
   projImagePhone: cvMobileImg,
@@ -79,9 +77,9 @@ const projectTwo = new ProjectInstance({
 });
 
 const projectThree = new ProjectInstance({
-  projName: "ProjectThree",
+  projName: "Project 3",
   langIcons: [webpackIcon, reactIcon],
-  projDescription: "lorem lip~",
+  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula. ",
   demoLink: "www.google.com",
   sourceLink: "www.google.com",
   projImagePhone: googleImg,

@@ -14,13 +14,13 @@ export default function Home() {
   const spring = useScrollingEffect(container);
   return (
     <>
-        <ParticlesBackground />
+        {/* <ParticlesBackground /> */}
 
-        <div ref={container} className="flex min-h-screen items-center justify-center">
+        <div ref={container} className="flex min-h-screen h-full w-100 items-center justify-center relative">
           <motion.div style={{y: spring}}>
             <CustomTextTitle canvasID="canvas"/>
 
-            <AnimatedArrowButton direction={Direction.Down}/>
+            <AnimatedArrowButton animate={true} direction={Direction.Down} className="absolute bottom-5 left-1/2 translate-x-[-50%]"/>
           </motion.div>
         </div>
 

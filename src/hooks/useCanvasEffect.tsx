@@ -17,13 +17,13 @@ export const useCanvasEffect = (canvasID : string) => {
         });
         if (!ctx) return;
     
-        canvas.width = window.innerWidth > 1600 ? 1600 : window.innerWidth;
-        canvas.height = window.innerHeight > 900 ? 900 : window.innerHeight;
+        canvas.width = window.innerWidth > 1600 ? 1600 : document.documentElement.clientWidth;
+        canvas.height = window.innerHeight > 900 ? 900 : document.documentElement.clientHeight;
     
         const effect = new Effect(ctx, canvas.width, canvas.height, canvas.id);
     
         if (firstLoad){
-            effect.createText(['Zhenkai', 'Web Developer']);
+            effect.createText(['Zhenkai', 'Developer']);
             effect.convertToParticles();
     
             const inViewPort = (element: HTMLElement) => {
@@ -43,10 +43,10 @@ export const useCanvasEffect = (canvasID : string) => {
             animate();
     
             window.addEventListener('resize', () => {
-                canvas.width = window.innerWidth > 1600 ? 1600 : window.innerWidth;
-                canvas.height = window.innerHeight > 900 ? 900 : window.innerHeight;
+                canvas.width = window.innerWidth > 1600 ? 1600 : document.documentElement.clientWidth;
+                canvas.height = window.innerHeight > 900 ? 900 : document.documentElement.clientHeight;
                 effect.resize(canvas.width, canvas.height);
-                effect.createText(['Zhenkai', 'Web Developer']);
+                effect.createText(['Zhenkai', 'Developer']);
                 effect.convertToParticles();
             });
 
@@ -60,8 +60,7 @@ export const useCanvasEffect = (canvasID : string) => {
 
 
     return (
-        <div className="">
-            <canvas id={canvasID}></canvas>
-        </div>
+        <>
+        </>
     );
 };

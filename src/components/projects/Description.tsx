@@ -11,12 +11,12 @@ export default function Description(props : ProjectDescription) {
                     })
                 }
             </div>
-            <p className="project-description 2xl:text-xl xl:text-lg md:text-base">
+            <p className="leading-0 project-description 2xl:text-xl xl:text-lg md:text-base">
                 {props.projDescription}
             </p>
-            <div className="links flex gap-10 mt-0 xl:mt-10 lg:mt-8">
-                {props.demoLink ? <button className="rounded border p-2"><a href={props.demoLink}>Live Demo</a></button> : null }
-                {props.sourceLink ? <button className="underline underline-offset-4"><a href={props.sourceLink}>Source</a></button> : null}
+            <div className="links flex gap-10 lg:mt-5">
+                {props.demoLink ? <button className="rounded border px-5 py-2 mx-auto font-bold border border-transparent bg-[#6198ff] hover:bg-blue-300 duration-500 rounded"><a href={props.demoLink}>Live Demo</a></button> : null }
+                {props.sourceLink ? <button className="underline underline-offset-4 font-bold"><a target="_blank" rel="noopener noreferrer" href={props.sourceLink}>Source</a></button> : null}
                 {props.children}
             </div>
       </>
