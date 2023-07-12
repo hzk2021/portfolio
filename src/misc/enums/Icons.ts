@@ -3,4 +3,8 @@ export enum Icons {
     React,
     Webpack,
     GitHub,
+
+    CSharp,
+    dotNET,
+
 }
