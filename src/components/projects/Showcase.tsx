@@ -3,6 +3,10 @@ import { ProjectShowcase } from "../../misc/types/ProjectShowcase";
 export default function Showcase(props: ProjectShowcase) {
     return (
       <>
+
+      {
+        props.projImagePhone === "" ? null
+        :
         <div className="phone-screen 
                         relative
                         border 
@@ -28,8 +32,11 @@ export default function Showcase(props: ProjectShowcase) {
                         aspect-ratio[360/740]">
                           <img src={props.projImagePhone} alt="phone-screen-img" className="object-fill w-full h-full"/>
                         </div>
+      }
 
-        <div className="pc-screen  
+      {props.projImagePC === "" ? null
+      :
+      <div className="pc-screen  
                         before:flex
                         before:content-[''] 
                         before:h-3
@@ -46,6 +53,7 @@ export default function Showcase(props: ProjectShowcase) {
                         min-w-[200px]">
                           <img src={props.projImagePC} alt="pc-screen-img" className="object-fill w-full h-full"/>
                         </div>
+      }
 
       </>
       

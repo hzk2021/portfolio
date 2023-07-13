@@ -6,6 +6,8 @@ import { IndexContext } from "../../contexts/IndexContext";
 import { useContext, useRef } from "react";
 import AnimatedArrowButton from "../AnimatedArrowButton";
 import Direction from "../../misc/enums/Direction";
+import useScrollingEffect from "../../hooks/useScrollingEffect";
+import {motion} from "framer-motion";
 
 interface Props extends ProjectDescription, ProjectShowcase{
     className ?: string
@@ -14,6 +16,9 @@ interface Props extends ProjectDescription, ProjectShowcase{
 
 export default function Project(props : Props) {
   
+    const container = useRef(null);
+    const spring = useScrollingEffect(container);
+
     const c = useContext(IndexContext);
 
     function minusIndex() {
@@ -28,7 +33,7 @@ export default function Project(props : Props) {
 
     return (
       <>
-        <div className={`${props.className} relative text-center gap-y-0 lg:gap-y-10`} id="projects">
+        <motion.div style={{y: spring}} className={`${props.className} relative text-center gap-y-5 lg:gap-y-10`} id="projects">
           <div className="flex flex-col gap-5 justify-center lg:order-first md:justify-center xl:self-end lg:self-end sm:self-center text-center lg:text-left items-center lg:items-start">
             <Description 
                       projName={props.projName}
@@ -49,10 +54,7 @@ export default function Project(props : Props) {
             <AnimatedArrowButton animate={false} direction={Direction.Right} className="rounded-full bg-white/30 p-2 transition duration-300 hover:bg-white/50" onClickEvent={increaseIndex}/>
           </div>
 
-          {/* <AnimatedArrowButton animate={false} direction={Direction.Left} className="p-2 mx-auto border border-transparent bg-[#6198ff] hover:bg-blue-300 duration-500 w-min rounded-full self-start xl:static lg:static md:absolute sm:absolute absolute bottom-[15%] sm:bottom-[35%] md:bottom-[31%] left-[15%]" onClickEvent={minusIndex}/>
-          <AnimatedArrowButton animate={false} direction={Direction.Right} className="p-2 mx-auto border border-transparent bg-[#6198ff] hover:bg-blue-300 duration-500 w-min rounded-full self-start xl:static lg:static md:absolute sm:absolute absolute bottom-[15%] sm:bottom-[35%] md:bottom-[31%] left-[75%]" onClickEvent={increaseIndex}/> */}
-
-        </div>
+        </motion.div>
       </>
       
     );
