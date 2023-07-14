@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.9c7b4bc4.css",
+    "main.js": "/portfolio/static/js/main.67bc8590.js",
+    "static/media/CarrySharp.png": "/portfolio/static/media/CarrySharp.4dd543ad74c9e9247d72.png",
+    "static/media/Minfluencer.png": "/portfolio/static/media/Minfluencer.58f502fbe533be36eefe.png",
+    "static/media/shopping-site.png": "/portfolio/static/media/shopping-site.63b8af4dc4282c958f8b.png",
+    "static/media/myfitelderly.png": "/portfolio/static/media/myfitelderly.adea75fdeb427ccc3391.png",
+    "static/media/memory-game.png": "/portfolio/static/media/memory-game.d4e8e42a7c593085aa0f.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.7b667ac75244dc5334a4.png",
+    "static/media/OnlyPlants-AWS-Architecture.png": "/portfolio/static/media/OnlyPlants-AWS-Architecture.09f2cd7c984b609428f5.png",
+    "static/media/OnlyPlants-mobile.png": "/portfolio/static/media/OnlyPlants-mobile.3ee5f9d2fd540588e389.png",
+    "static/media/myfitelderly-mobile.png": "/portfolio/static/media/myfitelderly-mobile.1e46ac7dd416d767607a.png",
+    "static/media/cv-app.png": "/portfolio/static/media/cv-app.7bbac3f97546e6a05ec1.png",
+    "static/media/todoList.png": "/portfolio/static/media/todoList.27f511743dc0e1c32c25.png",
+    "static/media/portfolio-mobile.png": "/portfolio/static/media/portfolio-mobile.2c05db0bd480335a63c3.png",
+    "static/media/tic-tac-toe.png": "/portfolio/static/media/tic-tac-toe.8ed1b49216d8e30fd232.png",
+    "static/media/SITConnect.png": "/portfolio/static/media/SITConnect.30a6476b060b602448b4.png",
+    "static/media/shopping-site-mobile.png": "/portfolio/static/media/shopping-site-mobile.4addc55817a0be4bcf64.png",
+    "static/media/memory-game-mobile.png": "/portfolio/static/media/memory-game-mobile.f9686a7ac5ed53073ce8.png",
+    "static/media/SITConnect-mobile.png": "/portfolio/static/media/SITConnect-mobile.0b3592c2f1e04b9afedc.png",
+    "static/media/cv-app-mobile.png": "/portfolio/static/media/cv-app-mobile.51c39353b7271aabde91.png",
+    "static/media/todoList-mobile.png": "/portfolio/static/media/todoList-mobile.802df1f89a2338ba5c0d.png",
+    "static/media/tic-tac-toe-mobile.png": "/portfolio/static/media/tic-tac-toe-mobile.69b98e2ce29b320b0aa7.png",
+    "static/media/Minfluencer-email-mobile.png": "/portfolio/static/media/Minfluencer-email-mobile.4dcc882d1b86ea11fc23.png",
+    "static/media/waves.svg": "/portfolio/static/media/waves.da0cdc8e5b27fd26513f06bcf3e7cd00.svg",
+    "index.html": "/portfolio/index.html",
+    "main.9c7b4bc4.css.map": "/portfolio/static/css/main.9c7b4bc4.css.map",
+    "main.67bc8590.js.map": "/portfolio/static/js/main.67bc8590.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c7b4bc4.css",
+    "static/js/main.67bc8590.js"
+  ]
+}
