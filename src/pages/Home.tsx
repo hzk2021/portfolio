@@ -1,5 +1,5 @@
 import { motion, useScroll } from "framer-motion";
-import ParticlesBackground from "../components/ParticlesBackground";
+// import ParticlesBackground from "../components/ParticlesBackground";
 import CustomTextTitle from "../components/CustomTextTitle";
 import AnimatedArrowButton from "../components/AnimatedArrowButton";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'

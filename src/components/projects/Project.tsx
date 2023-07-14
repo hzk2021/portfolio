@@ -22,7 +22,7 @@ export default function Project(props : Props) {
     const c = useContext(IndexContext);
 
     function minusIndex() {
-      const newIndex = (c.index -1 < 0) ? c.index = c.projectCount - 1: c.index - 1;
+      const newIndex = (c.index -1 < 0) ? c.index = 0: c.index - 1;
       c.setIndex(newIndex);
     }
 
@@ -50,7 +50,12 @@ export default function Project(props : Props) {
           </div>
 
           <div className="flex w-full justify-around self-start lg:col-span-2 col-span-1 lg:pt-8">
-            <AnimatedArrowButton animate={false} direction={Direction.Left} className="rounded-full bg-white/30 p-2 transition duration-300 hover:bg-white/50" onClickEvent={minusIndex}/>
+            {
+              c.index === 0 ?
+              <AnimatedArrowButton animate={false} direction={Direction.Left} className="rounded-full bg-white/30 p-2 opacity-50 cursor-not-allowed [&>button]:cursor-not-allowed" onClickEvent={minusIndex}/>
+              :
+              <AnimatedArrowButton animate={false} direction={Direction.Left} className="rounded-full bg-white/30 p-2 transition duration-300 hover:bg-white/50" onClickEvent={minusIndex}/>
+            }
             <AnimatedArrowButton animate={false} direction={Direction.Right} className="rounded-full bg-white/30 p-2 transition duration-300 hover:bg-white/50" onClickEvent={increaseIndex}/>
           </div>
 

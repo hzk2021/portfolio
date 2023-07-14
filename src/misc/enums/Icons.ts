@@ -32,4 +32,5 @@ export enum Icons {
     UIPath,
     Outlook,
     MetroUI,
+    Handlebars,
 }

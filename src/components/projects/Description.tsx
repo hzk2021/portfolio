@@ -11,7 +11,7 @@ export default function Description(props : ProjectDescription) {
                     })
                 }
             </div>
-            <p className="leading-0 project-description 2xl:text-xl xl:text-lg md:text-base">
+            <p className="leading-0 project-description 2xl:text-xl xl:text-lg md:text-base min-h-[112px] flex items-center">
                 {props.projDescription}
             </p>
             <div className="links flex gap-10 lg:mt-5 items-center">

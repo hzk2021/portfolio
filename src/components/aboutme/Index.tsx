@@ -17,7 +17,9 @@ export default function Index() {
           <motion.div style={{y : spring}} className="flex flex-col gap-5 self-center justify-center md:justify-center items-center xl:self-center lg:self-center md:self-center sm:self-center self-center lg:text-left items-center lg:items-start">
                 <AboutMeDescription 
                     projName="About Me"
-                    projDescription="Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula.">
+                    projDescription="
+                      I recently received my Diploma in Information Technology and my passion for the field has propelled me to continuously explore and study emerging technologies. My goal is to enhance my skills and advance my career in this everchanging industry.
+                    ">
                 
                   <button>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/hzk2021" className="flex underline underline-offset-4 items-center font-bold gap-2">

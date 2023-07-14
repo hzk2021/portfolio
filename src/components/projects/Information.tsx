@@ -19,6 +19,8 @@ import ticTacToeImg from "../../assets/images/tic-tac-toe.png";
 import ticTacToeMobileImg from "../../assets/images/tic-tac-toe-mobile.png";
 import todoListImg from "../../assets/images/todoList.png";
 import todoListMobileImg from "../../assets/images/todoList-mobile.png";
+import portfolioImg from "../../assets/images/portfolio.png";
+import portfolioMobileImg from "../../assets/images/portfolio-mobile.png";
 
 
 // Not exhaustive
@@ -51,6 +53,9 @@ const uiPathIcon = icons[Icons.UIPath];
 const outlookIcon = icons[Icons.Outlook];
 const firebaseIcon = icons[Icons.Firebase];
 const metroUIIcon = icons[Icons.MetroUI];
+const expressJSIcon = icons[Icons.ExpressJS];
+const handlebarsIcon = icons[Icons.Handlebars];
+const sequelizeIcon = icons[Icons.SequelizeORM];
 
 
 interface Props extends ProjectDescription, ProjectShowcase{
@@ -96,10 +101,10 @@ class ProjectInstance {
 }
 
 const gameHelper = new ProjectInstance({
-  projName: "Game Helper",
+  projName: "1. Game Helper",
   langIcons: [csharpIcon, firebaseIcon, reCAPTCHAGoogleIcon, metroUIIcon],
-  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula. ",
-  demoLink: "https://www.youtube.com/watch?v=mRDGwGykJNM",
+  projDescription: "An external League of Legends tool that sends inputs into the game, allowing players to focus on other aspects. It incorporates technologies like Index Pixel Searching, distance measurement through Math, and utilises native Win32API as well as reverse engineering techniques.",
+  demoLink: "https://www.youtube.com/watch?v=9-N1GP0Ly5M&list=PLK0DpOU9gUjmfGE0XkbBXI4eECe4lRH_D",
   sourceLink: "https://github.com/hzk2021/Game-Helper-Source",
   projImagePhone: "",
   projImagePC: carrySharpImg,
@@ -107,9 +112,9 @@ const gameHelper = new ProjectInstance({
 });
 
 const onlyPlants = new ProjectInstance({
-  projName: "OnlyPlants",
+  projName: "2. OnlyPlants",
   langIcons: [awsIcon, kotlinIcon],
-  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula. ",
+  projDescription: "Developed features for a mobile application that allows plant enthusiasts to identify various plants species, access relevant information, and language translation. Led the team in utilising Amazon Web Services such as Rekognition, S3, Lambda, API Gateway, etc. to build the core architecture",
   demoLink: "https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=ECP%20Week8%20Architecture#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1o1LIymYpuHoLy6Fg6cbqemQbc39vOUwj%26export%3Ddownload",
   sourceLink: "https://github.com/hzk2021/OnlyPlants",
   projImagePhone: OnlyPlantsMobileImg,
@@ -118,11 +123,21 @@ const onlyPlants = new ProjectInstance({
 });
 
 // TODO - Add this portfolio here
+const myPortfolio = new ProjectInstance({
+  projName: "3. Portfolio",
+  langIcons: [reactIcon, typeScriptIcon, tailWindIcon],
+  projDescription: "This fully responsive website. Built with React, TypeScript, Tailwind CSS, Webpack, Babel, and initialised using Create React App. It includes animations such as particle text, smooth scrolling, and custom button animations using the Framer Motion library.",
+  demoLink: " ",
+  sourceLink: "https://github.com/hzk2021/portfolio",
+  projImagePhone: portfolioMobileImg,
+  projImagePC: portfolioImg,
+  className: "grid min-h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
+});
 
 const myFitElderly = new ProjectInstance({
-  projName: "MyFitElderly",
+  projName: "4. MyFitElderly",
   langIcons: [dotNETIcon, csharpIcon, mySQLIcon],
-  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula. ",
+  projDescription: "A web-based health & fitness tracking app. I developed a comprehensive Survey Management System (similar to Google Forms) and a Web Analytics Dashboard. Implemented using technologies such as C#, Entity Framework and MySQL.",
   demoLink: "",
   sourceLink: "https://github.com/ayres-xxvii/EDP_Project",
   projImagePhone: myFitElderlyMobileImg,
@@ -131,9 +146,9 @@ const myFitElderly = new ProjectInstance({
 });
 
 const memoryGame = new ProjectInstance({
-  projName: "Memory Game",
+  projName: "5. Memory Game",
   langIcons: [reactIcon, webpackIcon, tailWindIcon, babelIcon],
-  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula. ",
+  projDescription: "A game that tests your memory whereby you try not to select the same pokemon more than once. It saves your best score, and the game ends when you have selected every Pokemon once.",
   demoLink: "https://hzk2021.github.io/react-memory-game/",
   sourceLink: "https://github.com/hzk2021/react-memory-game",
   projImagePhone: memoryMobileImg,
@@ -143,9 +158,9 @@ const memoryGame = new ProjectInstance({
 
 
 const sitConnect = new ProjectInstance({
-  projName: "SITConnect",
-  langIcons: [aspNETIcon, reactIcon, reCAPTCHAGoogleIcon, csharpIcon],
-  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula. ",
+  projName: "6. SITConnect",
+  langIcons: [aspNETIcon, reactIcon, reCAPTCHAGoogleIcon, csharpIcon, mySQLIcon],
+  projDescription: ".NET application that identifies threats and implements mitigation methods for common vulnerabilities, specifically those in the OWASP Top 10 & MITRE. Technologies employed include reCAPTCHA, Regex, SQL and Cryptography.",
   demoLink: "",
   sourceLink: "https://github.com/hzk2021/204304Z_SITConnect",
   projImagePhone: SITConnectMobileImg,
@@ -154,9 +169,9 @@ const sitConnect = new ProjectInstance({
 });
 
 const minfluencer = new ProjectInstance({
-  projName: "Minfluencer",
+  projName: "7. Minfluencer",
   langIcons: [uiPathIcon, outlookIcon],
-  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula. ",
+  projDescription: "A RPA robot programmed in UIPath that systematically extracts and scrapes customers' records from a website, which will be stored in a data bank using a web form. Using the same set of data, it sends promotional emails to customers.",
   demoLink: "",
   sourceLink: "https://github.com/hzk2021/RPA_Minfluencer",
   projImagePhone: MinfluencerEmailMobileImg,
@@ -165,9 +180,9 @@ const minfluencer = new ProjectInstance({
 });
 
 const cvCreator = new ProjectInstance({
-  projName: "CV Creator",
+  projName: "8. CV Creator",
   langIcons: [craIcon, tailWindIcon],
-  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula. ",
+  projDescription: "A React app that allows users to create a customised résumé by displaying a live preview of the copy, and optionally download it in PDF format.",
   demoLink: "https://hzk2021.github.io/cv-creator/",
   sourceLink: "https://github.com/hzk2021/cv-creator",
   projImagePhone: cvMobileImg,
@@ -176,9 +191,9 @@ const cvCreator = new ProjectInstance({
 });
 
 const shoppingSite = new ProjectInstance({
-  projName: "Shopping Site",
+  projName: "9. Shopping Site",
   langIcons: [javascriptIcon, webpackIcon, babelIcon, bootstrapIcon],
-  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula.",
+  projDescription: "A simple frontend-only clothing store with a shopping cart. Data is retrieved directly from the Fake Store API, and styled using the Bootstrap CSS Library.",
   demoLink: "https://hzk2021.github.io/neat-shopping/",
   sourceLink: "https://github.com/hzk2021/neat-shopping",
   projImagePhone: shoppingMobileImg,
@@ -186,21 +201,10 @@ const shoppingSite = new ProjectInstance({
   className: "grid min-h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
 });
 
-const ticTacToe = new ProjectInstance({
-  projName: "Tic Tac Toe",
-  langIcons: [htmlIcon, cssIcon, javascriptIcon],
-  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula. ",
-  demoLink: "https://hzk2021.github.io/Tic-Tac-Toe/",
-  sourceLink: "https://github.com/hzk2021/Tic-Tac-Toe",
-  projImagePhone: ticTacToeMobileImg,
-  projImagePC: ticTacToeImg,
-  className: "grid min-h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
-});
-
 const todoList = new ProjectInstance({
-  projName: "Todo List",
+  projName: "10. Todo List",
   langIcons: [sassIcon, javascriptIcon, htmlIcon, babelIcon],
-  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula. ",
+  projDescription: "A simple todo list application where users can manage their TODO's according to the current day and week.",
   demoLink: "https://hzk2021.github.io/Todo-List/",
   sourceLink: "https://github.com/hzk2021/Todo-List",
   projImagePhone: todoListMobileImg,
@@ -208,31 +212,56 @@ const todoList = new ProjectInstance({
   className: "grid min-h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
 });
 
-const restaurantMenu = new ProjectInstance({
-  projName: "Restaurant Menu",
-  langIcons: [htmlIcon, cssIcon, javascriptIcon, babelIcon, webpackIcon],
-  projDescription: "Ut hendrerit feugiat facilisis. Ut faucibus feugiat arcu in volutpat. Mauris quis erat lectus. Mauris porttitor risus a velit ultricies vestibulum. Nullam ut orci vehicula, euismod augue quis, sodales ligula. ",
-  demoLink: "https://hzk2021.github.io/SushiRestaurant/",
-  sourceLink: "https://github.com/hzk2021/SushiRestaurant",
-  projImagePhone: restaurantMenuMobileImg,
-  projImagePC: restaurantMenuImg,
+const ticTacToe = new ProjectInstance({
+  projName: "11. Tic Tac Toe",
+  langIcons: [htmlIcon, cssIcon, javascriptIcon],
+  projDescription: "Your classic childhood game made using vanilla HTML, CSS and JavaScript.",
+  demoLink: "https://hzk2021.github.io/Tic-Tac-Toe/",
+  sourceLink: "https://github.com/hzk2021/Tic-Tac-Toe",
+  projImagePhone: ticTacToeMobileImg,
+  projImagePC: ticTacToeImg,
   className: "grid min-h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
 });
+
+// const carlsJRClone = new ProjectInstance({
+//   projName: "12. Carls Jr Clone",
+//   langIcons: [expressJSIcon, handlebarsIcon, sequelizeIcon],
+//   projDescription: "A clone of the Carls Jr website with similar functionalities. Built using ExpressJS, Handlebars and Sequelize ORM.",
+//   demoLink: "https://hzk2021.github.io/SushiRestaurant/",
+//   sourceLink: "https://github.com/hzk2021/SushiRestaurant",
+//   projImagePhone: "",
+//   projImagePC: "",
+//   className: "grid min-h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
+// });
+
+
+// const restaurantMenu = new ProjectInstance({
+//   projName: "12. Restaurant Menu",
+//   langIcons: [htmlIcon, cssIcon, javascriptIcon, babelIcon, webpackIcon],
+//   projDescription: "Static website that displays sushi menu.",
+//   demoLink: "https://hzk2021.github.io/SushiRestaurant/",
+//   sourceLink: "https://github.com/hzk2021/SushiRestaurant",
+//   projImagePhone: restaurantMenuMobileImg,
+//   projImagePC: restaurantMenuImg,
+//   className: "grid min-h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
+// });
 
 
 
 const projectsInformation : JSX.Element[] = [];
 projectsInformation.push(gameHelper.create());
 projectsInformation.push(onlyPlants.create());
+projectsInformation.push(myPortfolio.create());
 projectsInformation.push(myFitElderly.create());
 projectsInformation.push(memoryGame.create());
 projectsInformation.push(sitConnect.create());
 projectsInformation.push(minfluencer.create());
 projectsInformation.push(cvCreator.create());
 projectsInformation.push(shoppingSite.create());
-projectsInformation.push(ticTacToe.create());
 projectsInformation.push(todoList.create());
-projectsInformation.push(restaurantMenu.create());
+projectsInformation.push(ticTacToe.create());
+// projectsInformation.push(carlsJRClone.create());
+// projectsInformation.push(restaurantMenu.create());
 
 
 export default projectsInformation;
