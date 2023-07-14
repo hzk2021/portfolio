@@ -55,6 +55,6 @@
     "json-loader": "^0.5.7",
     "tailwindcss": "^3.3.2"
   },
-  "homepage": "./"
-  // "homepage": "https://hzk2021.github.io/portfolio", // Only for GitHub domain, not custom domain
+  "homepage": "./" ,
+  "comment^":"use https://hzk2021.github.io/portfolio for GitHub domain",
 }
