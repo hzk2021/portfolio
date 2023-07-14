@@ -1,4 +1,5 @@
 import { ProjectShowcase } from "../../misc/types/ProjectShowcase";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Showcase(props: ProjectShowcase) {
     return (
@@ -7,6 +8,8 @@ export default function Showcase(props: ProjectShowcase) {
       {
         props.projImagePhone === "" ? null
         :
+        <AnimatePresence>
+
         <div className="phone-screen 
                         relative
                         border 
@@ -29,13 +32,23 @@ export default function Showcase(props: ProjectShowcase) {
                         lg:max-w-[100px]
                         w-1/6
                         h-auto
+                        lg:h-[200px]
                         aspect-ratio[360/740]">
-                          <img src={props.projImagePhone} alt="phone-screen-img" className="object-fill w-full h-full"/>
+                            <motion.img 
+                            initial={{y: -window.screen.height, opacity: 0}} 
+                            animate={{y: 0, opacity: 1}} 
+                            alt="phone-screen-img" 
+                            src={props.projImagePhone} 
+                            key={props.projImagePhone} 
+                            className="object-fill w-full h-full duration-100"/>
                         </div>
+        </AnimatePresence>
+
       }
 
       {props.projImagePC === "" ? null
       :
+      <AnimatePresence>
       <div className="pc-screen  
                         before:flex
                         before:content-[''] 
@@ -51,8 +64,17 @@ export default function Showcase(props: ProjectShowcase) {
                         h-auto
                         aspect-[16/9]
                         min-w-[200px]">
-                          <img src={props.projImagePC} alt="pc-screen-img" className="object-fill w-full h-full"/>
+                            <motion.img 
+                            initial={{y: window.screen.height, opacity: 0}} 
+                            animate={{y: 0, opacity: 1}} 
+                            key={props.projImagePC} 
+                            src={props.projImagePC} 
+                             alt="pc-screen-img" 
+                            className="object-fill w-full h-full duration-100"/>
+                            
                         </div>
+      </AnimatePresence>
+
       }
 
       </>
