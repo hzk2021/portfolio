@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9c7b4bc4.css",
-    "main.js": "/portfolio/static/js/main.67bc8590.js",
+    "main.css": "/portfolio/static/css/main.80e57516.css",
+    "main.js": "/portfolio/static/js/main.ca6283aa.js",
     "static/media/CarrySharp.png": "/portfolio/static/media/CarrySharp.4dd543ad74c9e9247d72.png",
     "static/media/Minfluencer.png": "/portfolio/static/media/Minfluencer.58f502fbe533be36eefe.png",
     "static/media/shopping-site.png": "/portfolio/static/media/shopping-site.63b8af4dc4282c958f8b.png",
@@ -25,11 +25,11 @@
     "static/media/Minfluencer-email-mobile.png": "/portfolio/static/media/Minfluencer-email-mobile.4dcc882d1b86ea11fc23.png",
     "static/media/waves.svg": "/portfolio/static/media/waves.da0cdc8e5b27fd26513f06bcf3e7cd00.svg",
     "index.html": "/portfolio/index.html",
-    "main.9c7b4bc4.css.map": "/portfolio/static/css/main.9c7b4bc4.css.map",
-    "main.67bc8590.js.map": "/portfolio/static/js/main.67bc8590.js.map"
+    "main.80e57516.css.map": "/portfolio/static/css/main.80e57516.css.map",
+    "main.ca6283aa.js.map": "/portfolio/static/js/main.ca6283aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c7b4bc4.css",
-    "static/js/main.67bc8590.js"
+    "static/css/main.80e57516.css",
+    "static/js/main.ca6283aa.js"
   ]
 }
