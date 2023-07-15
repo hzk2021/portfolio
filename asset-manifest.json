@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.80e57516.css",
-    "main.js": "./static/js/main.d6f2658c.js",
+    "main.css": "./static/css/main.b3ab00fb.css",
+    "main.js": "./static/js/main.2658d73c.js",
     "static/media/CarrySharp.png": "./static/media/CarrySharp.4dd543ad74c9e9247d72.png",
     "static/media/Minfluencer.png": "./static/media/Minfluencer.58f502fbe533be36eefe.png",
     "static/media/shopping-site.png": "./static/media/shopping-site.63b8af4dc4282c958f8b.png",
@@ -11,9 +11,11 @@
     "static/media/OnlyPlants-AWS-Architecture.png": "./static/media/OnlyPlants-AWS-Architecture.09f2cd7c984b609428f5.png",
     "static/media/OnlyPlants-mobile.png": "./static/media/OnlyPlants-mobile.3ee5f9d2fd540588e389.png",
     "static/media/myfitelderly-mobile.png": "./static/media/myfitelderly-mobile.1e46ac7dd416d767607a.png",
+    "static/media/lost-and-found.png": "./static/media/lost-and-found.166ffe12892e9fd6ecb0.png",
     "static/media/cv-app.png": "./static/media/cv-app.7bbac3f97546e6a05ec1.png",
     "static/media/todoList.png": "./static/media/todoList.27f511743dc0e1c32c25.png",
     "static/media/portfolio-mobile.png": "./static/media/portfolio-mobile.2c05db0bd480335a63c3.png",
+    "static/media/lost-and-found-mobile.png": "./static/media/lost-and-found-mobile.8f52950f670dfa61ee8d.png",
     "static/media/tic-tac-toe.png": "./static/media/tic-tac-toe.8ed1b49216d8e30fd232.png",
     "static/media/SITConnect.png": "./static/media/SITConnect.30a6476b060b602448b4.png",
     "static/media/shopping-site-mobile.png": "./static/media/shopping-site-mobile.4addc55817a0be4bcf64.png",
@@ -25,11 +27,11 @@
     "static/media/Minfluencer-email-mobile.png": "./static/media/Minfluencer-email-mobile.4dcc882d1b86ea11fc23.png",
     "static/media/waves.svg": "./static/media/waves.da0cdc8e5b27fd26513f06bcf3e7cd00.svg",
     "index.html": "./index.html",
-    "main.80e57516.css.map": "./static/css/main.80e57516.css.map",
-    "main.d6f2658c.js.map": "./static/js/main.d6f2658c.js.map"
+    "main.b3ab00fb.css.map": "./static/css/main.b3ab00fb.css.map",
+    "main.2658d73c.js.map": "./static/js/main.2658d73c.js.map"
   },
   "entrypoints": [
-    "static/css/main.80e57516.css",
-    "static/js/main.d6f2658c.js"
+    "static/css/main.b3ab00fb.css",
+    "static/js/main.2658d73c.js"
   ]
 }
