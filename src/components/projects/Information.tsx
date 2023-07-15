@@ -21,6 +21,8 @@ import todoListImg from "../../assets/images/todoList.png";
 import todoListMobileImg from "../../assets/images/todoList-mobile.png";
 import portfolioImg from "../../assets/images/portfolio.png";
 import portfolioMobileImg from "../../assets/images/portfolio-mobile.png";
+import lostAndFoundImg from "../../assets/images/lost-and-found.png";
+import lostAndFoundMobileImg from "../../assets/images/lost-and-found-mobile.png";
 
 
 // Not exhaustive
@@ -56,6 +58,7 @@ const metroUIIcon = icons[Icons.MetroUI];
 const expressJSIcon = icons[Icons.ExpressJS];
 const handlebarsIcon = icons[Icons.Handlebars];
 const sequelizeIcon = icons[Icons.SequelizeORM];
+const pugIcon = icons[Icons.Pug];
 
 
 interface Props extends ProjectDescription, ProjectShowcase{
@@ -179,8 +182,19 @@ const minfluencer = new ProjectInstance({
   className: "grid min-h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
 });
 
+const lostAndFound = new ProjectInstance({
+  projName: "8. Lost and Found",
+  langIcons: [expressJSIcon, sequelizeIcon, awsIcon, pugIcon],
+  projDescription: "A quick lost and found website for Polytechnic students to file and retrieve lost items. Services utilised include ExpressJS, Sequelize, AWS and Handlebars.",
+  demoLink: "",
+  sourceLink: "https://github.com/hzk2021/Lost-and-Found",
+  projImagePhone: lostAndFoundMobileImg,
+  projImagePC: lostAndFoundImg,
+  className: "grid min-h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
+});
+
 const cvCreator = new ProjectInstance({
-  projName: "8. CV Creator",
+  projName: "9. CV Creator",
   langIcons: [craIcon, tailWindIcon],
   projDescription: "A React app that allows users to create a customised résumé by displaying a live preview of the copy, and optionally download it in PDF format.",
   demoLink: "https://cvcreator.zhenkai.codes",
@@ -191,7 +205,7 @@ const cvCreator = new ProjectInstance({
 });
 
 const shoppingSite = new ProjectInstance({
-  projName: "9. Shopping Site",
+  projName: "10. Shopping Site",
   langIcons: [javascriptIcon, webpackIcon, babelIcon, bootstrapIcon],
   projDescription: "A simple frontend-only clothing store with a shopping cart. Data is retrieved directly from the Fake Store API, and styled using the Bootstrap CSS Library.",
   demoLink: "https://neatshopping.zhenkai.codes",
@@ -202,7 +216,7 @@ const shoppingSite = new ProjectInstance({
 });
 
 const todoList = new ProjectInstance({
-  projName: "10. Todo List",
+  projName: "11. Todo List",
   langIcons: [sassIcon, javascriptIcon, htmlIcon, babelIcon],
   projDescription: "A simple todo list application where users can manage their TODO's according to the current day and week.",
   demoLink: "https://todolist.zhenkai.codes",
@@ -213,7 +227,7 @@ const todoList = new ProjectInstance({
 });
 
 const ticTacToe = new ProjectInstance({
-  projName: "11. Tic Tac Toe",
+  projName: "12. Tic Tac Toe",
   langIcons: [htmlIcon, cssIcon, javascriptIcon],
   projDescription: "Your classic childhood game made using vanilla HTML, CSS and JavaScript.",
   demoLink: "https://tictactoe.zhenkai.codes",
@@ -224,7 +238,7 @@ const ticTacToe = new ProjectInstance({
 });
 
 // const carlsJRClone = new ProjectInstance({
-//   projName: "12. Carls Jr Clone",
+//   projName: "13. Carls Jr Clone",
 //   langIcons: [expressJSIcon, handlebarsIcon, sequelizeIcon],
 //   projDescription: "A clone of the Carls Jr website with similar functionalities. Built using ExpressJS, Handlebars and Sequelize ORM.",
 //   demoLink: "https://hzk2021.github.io/SushiRestaurant/",
@@ -236,7 +250,7 @@ const ticTacToe = new ProjectInstance({
 
 
 // const restaurantMenu = new ProjectInstance({
-//   projName: "12. Restaurant Menu",
+//   projName: "14. Restaurant Menu",
 //   langIcons: [htmlIcon, cssIcon, javascriptIcon, babelIcon, webpackIcon],
 //   projDescription: "Static website that displays sushi menu.",
 //   demoLink: "https://hzk2021.github.io/SushiRestaurant/",
@@ -256,6 +270,7 @@ projectsInformation.push(myFitElderly.create());
 projectsInformation.push(memoryGame.create());
 projectsInformation.push(sitConnect.create());
 projectsInformation.push(minfluencer.create());
+projectsInformation.push(lostAndFound.create());
 projectsInformation.push(cvCreator.create());
 projectsInformation.push(shoppingSite.create());
 projectsInformation.push(todoList.create());

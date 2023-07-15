@@ -33,4 +33,5 @@ export enum Icons {
     Outlook,
     MetroUI,
     Handlebars,
+    Pug,
 }

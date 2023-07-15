@@ -7,7 +7,7 @@ export const skillSet = [
     {language: "C#", icon: icons[Icons.CSharp]},
     {language: "TypeScript", icon: icons[Icons.TypeScript]},
     {language: "Webpack", icon: icons[Icons.Webpack]},
-    {language: "JavaScript", icon: icons[Icons.JavaScript]},
+    // {language: "JavaScript", icon: icons[Icons.JavaScript]},
     {language: "Git", icon: icons[Icons.Git]},
     {language: "Tailwind", icon: icons[Icons.Tailwind]},
     {language: "Bootstrap", icon: icons[Icons.Bootstrap]},
@@ -26,6 +26,9 @@ export const skillSet = [
     {language: "Sequelize", icon: icons[Icons.SequelizeORM]},
     {language: "ASP", icon: icons[Icons.ASPNet]},
     {language: "Alibaba", icon: icons[Icons.AlibabaCloud]},
-    {language: "UIPath", icon: icons[Icons.UIPath]}
+    {language: "UIPath", icon: icons[Icons.UIPath]},
+    // {language: "Handlebars", icon: icons[Icons.Handlebars]},
+    {language: "Pug", icon: icons[Icons.Pug]},
+
     
 ];
