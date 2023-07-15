@@ -142,7 +142,7 @@ const myFitElderly = new ProjectInstance({
   langIcons: [dotNETIcon, csharpIcon, mySQLIcon],
   projDescription: "A web-based health & fitness tracking app. I developed a comprehensive Survey Management System (similar to Google Forms) and a Web Analytics Dashboard. Implemented using technologies such as C#, Entity Framework and MySQL.",
   demoLink: "",
-  sourceLink: "https://github.com/ayres-xxvii/EDP_Project",
+  sourceLink: "https://github.com/hzk2021/MyFitElderly",
   projImagePhone: myFitElderlyMobileImg,
   projImagePC: myFitElderlyImg,
   className: "grid min-h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
