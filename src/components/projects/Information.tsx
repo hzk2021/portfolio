@@ -150,7 +150,7 @@ const myFitElderly = new ProjectInstance({
 
 const memoryGame = new ProjectInstance({
   projName: "5. Memory Game",
-  langIcons: [reactIcon, webpackIcon, tailWindIcon, babelIcon],
+  langIcons: [reactIcon, webpackIcon, bootstrapIcon, babelIcon],
   projDescription: "A game that tests your memory whereby you try not to select the same pokemon more than once. It saves your best score, and the game ends when you have selected every Pokemon once.",
   demoLink: "https://hzk2021.github.io/react-memory-game",
   sourceLink: "https://github.com/hzk2021/react-memory-game",
@@ -162,7 +162,7 @@ const memoryGame = new ProjectInstance({
 
 const sitConnect = new ProjectInstance({
   projName: "6. SITConnect",
-  langIcons: [aspNETIcon, reactIcon, reCAPTCHAGoogleIcon, csharpIcon, mySQLIcon],
+  langIcons: [aspNETIcon, reCAPTCHAGoogleIcon, csharpIcon, mySQLIcon],
   projDescription: ".NET application that identifies threats and implements mitigation methods for common vulnerabilities, specifically those in the OWASP Top 10 & MITRE. Technologies employed include reCAPTCHA, Regex, SQL and Cryptography.",
   demoLink: "",
   sourceLink: "https://github.com/hzk2021/204304Z_SITConnect",
