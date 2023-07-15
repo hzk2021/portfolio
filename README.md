@@ -32,7 +32,7 @@ Zhenkai's portfolio site.
 #### Icons
 
 - [React Icons](https://github.com/react-icons/react-icons)
-- [Google Material Icons](https://fonts.google.com/icons)
+- [FontAwesome](https://fontawesome.com/)
 - [Simple Icons](https://simpleicons.org/)
 
 #### Other
