@@ -23,7 +23,7 @@ Zhenkai's portfolio site.
 - TypeScript <img height="16" width="16" src="https://cdn.simpleicons.org/typescript" />
 - Tailwind <img height="16" width="16" src="https://cdn.simpleicons.org/tailwindcss" />
 - Webpack <img height="16" width="16" src="https://cdn.simpleicons.org/webpack" />
-- Tailwindcss <img height="16" width="16" src="https://cdn.simpleicons.org/babel" />
+- Babel <img height="16" width="16" src="https://cdn.simpleicons.org/babel" />
 
 #### Libraries
 
