@@ -1,4 +1,4 @@
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 // import ParticlesBackground from "../components/ParticlesBackground";
 import CustomTextTitle from "../components/CustomTextTitle";
 import AnimatedArrowButton from "../components/AnimatedArrowButton";
@@ -12,9 +12,19 @@ import useScrollingEffect from "../hooks/useScrollingEffect";
 export default function Home() {
   const container = useRef(null);
   const spring = useScrollingEffect(container);
+
+  const {scrollYProgress} = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  })
+
   return (
     <>
         {/* <ParticlesBackground /> */}
+
+        <motion.div style={{ scaleX }} className="progress-bar"/>
 
         <div ref={container} className="flex min-h-screen h-full w-100 items-center justify-center relative">
           <motion.div style={{y: spring}}>

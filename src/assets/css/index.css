@@ -6,14 +6,24 @@ html {
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+    display: none; /* chrome, safari, opera */
+}
+
+.hide-default-scroll {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
 .progress-bar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 10px;
-    background: red;
+    background: #F1CC13;
     transform-origin: 0%;
+    z-index: 2;
 }
 
 /* .name-canvas canvas {
