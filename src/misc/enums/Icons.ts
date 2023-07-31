@@ -34,4 +34,10 @@ export enum Icons {
     MetroUI,
     Handlebars,
     Pug,
+    NextJS,
+    MongoDB,
+    Mongoose,
+    ESLint,
+    FontAwesome,
+    MUI,
 }

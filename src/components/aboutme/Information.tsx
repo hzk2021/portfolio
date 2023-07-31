@@ -3,7 +3,7 @@ import { icons } from "../../misc/icons";
 
 export const skillSet = [
     {language: "React", icon: icons[Icons.React]},
-    {language: "dotNET", icon: icons[Icons.dotNET]},
+    {language: "NextJS", icon: icons[Icons.NextJS]},
     {language: "C#", icon: icons[Icons.CSharp]},
     {language: "TypeScript", icon: icons[Icons.TypeScript]},
     {language: "Webpack", icon: icons[Icons.Webpack]},
@@ -29,6 +29,11 @@ export const skillSet = [
     {language: "UIPath", icon: icons[Icons.UIPath]},
     // {language: "Handlebars", icon: icons[Icons.Handlebars]},
     {language: "Pug", icon: icons[Icons.Pug]},
+    {language: "MongoDB", icon: icons[Icons.MongoDB]},
+    {language: "Mongoose", icon: icons[Icons.Mongoose]},
+    {language: "ESLint", icon: icons[Icons.ESLint]},
+    {language: "FontAwesome", icon: icons[Icons.FontAwesome]},
+    {language: "Material UI", icon: icons[Icons.MUI]},
 
     
 ];

@@ -23,6 +23,8 @@ import portfolioImg from "../../assets/images/portfolio.png";
 import portfolioMobileImg from "../../assets/images/portfolio-mobile.png";
 import lostAndFoundImg from "../../assets/images/lost-and-found.png";
 import lostAndFoundMobileImg from "../../assets/images/lost-and-found-mobile.png";
+import typeIOImg from "../../assets/images/typeIO.png";
+import typeIOMobileImg from "../../assets/images/typeIO-mobile.png";
 
 
 // Not exhaustive
@@ -59,6 +61,12 @@ const expressJSIcon = icons[Icons.ExpressJS];
 const handlebarsIcon = icons[Icons.Handlebars];
 const sequelizeIcon = icons[Icons.SequelizeORM];
 const pugIcon = icons[Icons.Pug];
+const nextJSIcon = icons[Icons.NextJS];
+const mongoDBIcon = icons[Icons.MongoDB];
+const mongooseIcon = icons[Icons.Mongoose];
+const esLintIcon = icons[Icons.ESLint];
+const fontAwesomeIcon = icons[Icons.FontAwesome];
+const muiIcon = icons[Icons.MUI];
 
 
 interface Props extends ProjectDescription, ProjectShowcase{
@@ -114,8 +122,19 @@ const gameHelper = new ProjectInstance({
   className: "grid min-h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
 });
 
+const typeIO = new ProjectInstance({
+  projName: "2. TypeIO",
+  langIcons: [nextJSIcon, mongoDBIcon, mongooseIcon, muiIcon, fontAwesomeIcon, esLintIcon, reCAPTCHAGoogleIcon],
+  projDescription: "A live website where individuals can test their typing speed, and optionally log in to compare their high scores with other players. This project utilises latest and upcoming technologies like NextJS for server-side rendering, MongoDB for storage, Mongoose for object modelling, MaterialUI for styling, and OAuth 2.0 for authentication.",
+  demoLink: "https://type-io-ashen.vercel.app/",
+  sourceLink: "https://github.com/hzk2021/type.io",
+  projImagePhone: typeIOMobileImg,
+  projImagePC: typeIOImg,
+  className: "grid min-h-screen lg:grid-cols-[1fr_1fr] grid-rows-[auto_auto] md:grid-cols-1 items-center gap-x-10 px-5"
+});
+
 const onlyPlants = new ProjectInstance({
-  projName: "2. OnlyPlants",
+  projName: "3. OnlyPlants",
   langIcons: [awsIcon, kotlinIcon],
   projDescription: "Developed features for a mobile application that allows plant enthusiasts to identify various plants species, access relevant information, and language translation. Led the team in utilising Amazon Web Services such as Rekognition, S3, Lambda, API Gateway, etc. to build the core architecture",
   demoLink: "https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1&title=ECP%20Week8%20Architecture#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1o1LIymYpuHoLy6Fg6cbqemQbc39vOUwj%26export%3Ddownload",
@@ -127,7 +146,7 @@ const onlyPlants = new ProjectInstance({
 
 // TODO - Add this portfolio here
 const myPortfolio = new ProjectInstance({
-  projName: "3. Portfolio",
+  projName: "4. Portfolio",
   langIcons: [reactIcon, typeScriptIcon, tailWindIcon],
   projDescription: "This fully responsive website. Built with React, TypeScript, Tailwind CSS, Webpack, Babel, and initialised using Create React App. It includes animations such as particle text, smooth scrolling, and custom button animations using the Framer Motion library.",
   demoLink: "https://hzk2021.github.io/portfolio",
@@ -138,7 +157,7 @@ const myPortfolio = new ProjectInstance({
 });
 
 const myFitElderly = new ProjectInstance({
-  projName: "4. MyFitElderly",
+  projName: "5. MyFitElderly",
   langIcons: [dotNETIcon, csharpIcon, mySQLIcon],
   projDescription: "A web-based health & fitness tracking app. I developed a comprehensive Survey Management System (similar to Google Forms) and a Web Analytics Dashboard. Implemented using technologies such as C#, Entity Framework and MySQL.",
   demoLink: "",
@@ -149,7 +168,7 @@ const myFitElderly = new ProjectInstance({
 });
 
 const memoryGame = new ProjectInstance({
-  projName: "5. Memory Game",
+  projName: "6. Memory Game",
   langIcons: [reactIcon, webpackIcon, bootstrapIcon, babelIcon],
   projDescription: "A game that tests your memory whereby you try not to select the same pokemon more than once. It saves your best score, and the game ends when you have selected every Pokemon once.",
   demoLink: "https://hzk2021.github.io/react-memory-game",
@@ -161,7 +180,7 @@ const memoryGame = new ProjectInstance({
 
 
 const sitConnect = new ProjectInstance({
-  projName: "6. SITConnect",
+  projName: "7. SITConnect",
   langIcons: [aspNETIcon, reCAPTCHAGoogleIcon, csharpIcon, mySQLIcon],
   projDescription: ".NET application that identifies threats and implements mitigation methods for common vulnerabilities, specifically those in the OWASP Top 10 & MITRE. Technologies employed include reCAPTCHA, Regex, SQL and Cryptography.",
   demoLink: "",
@@ -172,7 +191,7 @@ const sitConnect = new ProjectInstance({
 });
 
 const minfluencer = new ProjectInstance({
-  projName: "7. Minfluencer",
+  projName: "8. Minfluencer",
   langIcons: [uiPathIcon, outlookIcon],
   projDescription: "A RPA robot programmed in UIPath that systematically extracts and scrapes customers' records from a website, which will be stored in a data bank using a web form. Using the same set of data, it sends promotional emails to customers.",
   demoLink: "",
@@ -183,7 +202,7 @@ const minfluencer = new ProjectInstance({
 });
 
 const lostAndFound = new ProjectInstance({
-  projName: "8. Lost and Found",
+  projName: "9. Lost and Found",
   langIcons: [expressJSIcon, sequelizeIcon, awsIcon, pugIcon],
   projDescription: "A quick lost and found website for Polytechnic students to file and retrieve lost items. Services utilised include ExpressJS, Sequelize, AWS and Handlebars.",
   demoLink: "",
@@ -194,7 +213,7 @@ const lostAndFound = new ProjectInstance({
 });
 
 const cvCreator = new ProjectInstance({
-  projName: "9. CV Creator",
+  projName: "10. CV Creator",
   langIcons: [craIcon, tailWindIcon],
   projDescription: "A React app that allows users to create a customised résumé by displaying a live preview of the copy, and optionally download it in PDF format.",
   demoLink: "https://hzk2021.github.io/cv-creator",
@@ -205,7 +224,7 @@ const cvCreator = new ProjectInstance({
 });
 
 const shoppingSite = new ProjectInstance({
-  projName: "10. Shopping Site",
+  projName: "11. Shopping Site",
   langIcons: [javascriptIcon, webpackIcon, babelIcon, bootstrapIcon],
   projDescription: "A simple frontend-only clothing store with a shopping cart. Data is retrieved directly from the Fake Store API, and styled using the Bootstrap CSS Library.",
   demoLink: "https://hzk2021.github.io/neat-shopping",
@@ -216,7 +235,7 @@ const shoppingSite = new ProjectInstance({
 });
 
 const todoList = new ProjectInstance({
-  projName: "11. Todo List",
+  projName: "12. Todo List",
   langIcons: [sassIcon, javascriptIcon, htmlIcon, babelIcon],
   projDescription: "A simple todo list application where users can manage their TODO's according to the current day and week.",
   demoLink: "https://hzk2021.github.io/Todo-List",
@@ -227,7 +246,7 @@ const todoList = new ProjectInstance({
 });
 
 const ticTacToe = new ProjectInstance({
-  projName: "12. Tic Tac Toe",
+  projName: "13. Tic Tac Toe",
   langIcons: [htmlIcon, cssIcon, javascriptIcon],
   projDescription: "Your classic childhood game made using vanilla HTML, CSS and JavaScript.",
   demoLink: "https://hzk2021.github.io/Tic-Tac-Toe",
@@ -238,7 +257,7 @@ const ticTacToe = new ProjectInstance({
 });
 
 // const carlsJRClone = new ProjectInstance({
-//   projName: "13. Carls Jr Clone",
+//   projName: "14. Carls Jr Clone",
 //   langIcons: [expressJSIcon, handlebarsIcon, sequelizeIcon],
 //   projDescription: "A clone of the Carls Jr website with similar functionalities. Built using ExpressJS, Handlebars and Sequelize ORM.",
 //   demoLink: "https://hzk2021.github.io/SushiRestaurant/",
@@ -250,7 +269,7 @@ const ticTacToe = new ProjectInstance({
 
 
 // const restaurantMenu = new ProjectInstance({
-//   projName: "14. Restaurant Menu",
+//   projName: "15. Restaurant Menu",
 //   langIcons: [htmlIcon, cssIcon, javascriptIcon, babelIcon, webpackIcon],
 //   projDescription: "Static website that displays sushi menu.",
 //   demoLink: "https://hzk2021.github.io/SushiRestaurant/",
@@ -264,6 +283,7 @@ const ticTacToe = new ProjectInstance({
 
 const projectsInformation : JSX.Element[] = [];
 projectsInformation.push(gameHelper.create());
+projectsInformation.push(typeIO.create());
 projectsInformation.push(onlyPlants.create());
 projectsInformation.push(myPortfolio.create());
 projectsInformation.push(myFitElderly.create());

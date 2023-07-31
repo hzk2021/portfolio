@@ -35,8 +35,8 @@ export default function Showcase(props: ProjectShowcase) {
                         lg:h-[200px]
                         aspect-ratio[360/740]">
                             <motion.img 
-                            initial={{y: -window.screen.height, opacity: 0}} 
-                            animate={{y: 0, opacity: 1}} 
+                            initial={{opacity: 0}} 
+                            animate={{opacity: 1}} 
                             alt="phone-screen-img" 
                             src={props.projImagePhone} 
                             key={props.projImagePhone} 
@@ -65,8 +65,8 @@ export default function Showcase(props: ProjectShowcase) {
                         aspect-[16/9]
                         min-w-[200px]">
                             <motion.img 
-                            initial={{y: window.screen.height, opacity: 0}} 
-                            animate={{y: 0, opacity: 1}} 
+                            initial={{opacity: 0}} 
+                            animate={{opacity: 1}} 
                             key={props.projImagePC} 
                             src={props.projImagePC} 
                              alt="pc-screen-img" 
