@@ -124,8 +124,8 @@ const gameHelper = new ProjectInstance({
 
 const typeIO = new ProjectInstance({
   projName: "2. TypeIO",
-  langIcons: [nextJSIcon, mongoDBIcon, mongooseIcon, muiIcon, fontAwesomeIcon, esLintIcon, reCAPTCHAGoogleIcon],
-  projDescription: "A live website where individuals can test their typing speed, and optionally log in to compare their high scores with other players. This project utilises latest and upcoming technologies like NextJS for server-side rendering; MongoDB for storage; Mongoose for object modelling; MaterialUI for styling; NextAuthJS and OAuth 2.0 for authentication.",
+  langIcons: [nextJSIcon, typeScriptIcon, mongoDBIcon, mongooseIcon, muiIcon, fontAwesomeIcon, esLintIcon, reCAPTCHAGoogleIcon],
+  projDescription: "A live website where individuals can test their typing speed, and optionally log in to compare their high scores with other players. This project utilises latest and upcoming technologies like NextJS for server-side rendering; TypeScript for type-checking; MongoDB and Mongoose for storage; MaterialUI for styling; NextAuthJS and OAuth 2.0 for authentication.",
   demoLink: "https://type-io-ashen.vercel.app/",
   sourceLink: "https://github.com/hzk2021/type.io",
   projImagePhone: typeIOMobileImg,
