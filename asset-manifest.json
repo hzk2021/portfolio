@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.721bfbe8.css",
-    "main.js": "./static/js/main.306afa7d.js",
+    "main.js": "./static/js/main.db15f695.js",
     "static/media/CarrySharp.png": "./static/media/CarrySharp.4dd543ad74c9e9247d72.png",
     "static/media/Minfluencer.png": "./static/media/Minfluencer.58f502fbe533be36eefe.png",
     "static/media/shopping-site.png": "./static/media/shopping-site.63b8af4dc4282c958f8b.png",
@@ -30,10 +30,10 @@
     "static/media/waves.svg": "./static/media/waves.da0cdc8e5b27fd26513f06bcf3e7cd00.svg",
     "index.html": "./index.html",
     "main.721bfbe8.css.map": "./static/css/main.721bfbe8.css.map",
-    "main.306afa7d.js.map": "./static/js/main.306afa7d.js.map"
+    "main.db15f695.js.map": "./static/js/main.db15f695.js.map"
   },
   "entrypoints": [
     "static/css/main.721bfbe8.css",
-    "static/js/main.306afa7d.js"
+    "static/js/main.db15f695.js"
   ]
 }
